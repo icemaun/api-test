@@ -5,8 +5,8 @@ app.get("/", (req, res) => {
     res.send("Welcome to my Sean's backend application");
 }); 
 
-app.get("/giacomo", (req, res) => {
-    res.send("Hello Giacomo!");
+app.get("/Isaac", (req, res) => {
+    res.send("Isaac Maughan!");
 });
 
 app.listen(3000, ()=> {

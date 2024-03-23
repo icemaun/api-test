@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: giacomo-api
+  name: isaac-api
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: giacomo-api
+      app: isaac-api
   template:
     metadata:
       labels:
-        app: giacomo-api
+        app: isaac-api
     spec:
       containers:
-        - name: giacomo-api
+        - name: isaac-api
         # The image is a prebuilt file containing the operating system
-          image: us-docker.pkg.dev/applied-honor-416721/giacomo-api/api-tests
+          image: us-docker.pkg.dev/applied-honor-416721/isaac-api/api-tests
           ports:
             - containerPort: 3000
           resources:
