@@ -15,7 +15,7 @@ spec:
       containers:
         - name: isaac-api
         # The image is a prebuilt file containing the operating system
-          image: us-docker.pkg.dev/applied-honor-416721/isaac-api/api-tests
+          image: us-docker.pkg.dev/vm-machine-416703/isaac-api/api-test
           ports:
             - containerPort: 3000
           resources:
